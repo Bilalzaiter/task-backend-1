@@ -1,12 +1,16 @@
 const { format, createLogger, transports } = require('winston');
 const { timestamp, combine, printf, errors, json } = format;
+const { v4: uuidv4 } = require('uuid');
+
 
 const requestLogFormat = printf(({ level, message, timestamp }) => {
-  return `${timestamp} ${level.toUpperCase()} ${message}`;
+  const requestId = uuidv4();
+  return `${timestamp} ${requestId} ${level.toUpperCase()} ${message}`;
 });
 
 const errorLogFormat = printf(({ level, message, timestamp, stack }) => {
-  let logMessage = `${timestamp} ${level.toUpperCase()}\n${stack || (typeof message === 'object' ? JSON.stringify(message) : message)}`;
+  const requestId = uuidv4();
+  let logMessage = `${timestamp} ${requestId} ${level.toUpperCase()}\n${stack || (typeof message === 'object' ? JSON.stringify(message) : message)}`;
   return logMessage;
 });
 
