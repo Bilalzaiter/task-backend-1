@@ -1,0 +1,8 @@
+20230710	12:11:06	7ec7f895-8712-4a24-b283-2a18e2553970	TypeError: allowedOrigins.indexOf is not a function	GET	/	undefined
+20230710	12:11:07	2e84b4ec-7775-4c2d-8a6c-40e13688e829	TypeError: allowedOrigins.indexOf is not a function	GET	/	undefined
+20230710	12:11:40	19de1b39-2d41-443a-b884-4957da29a87d	TypeError: allowedOrigins.indexOf is not a function	GET	/	undefined
+20230710	12:11:40	2e543118-636b-4cae-a447-d5097c480e1c	TypeError: allowedOrigins.indexOf is not a function	GET	/	undefined
+20230710	12:11:54	320c0379-5360-4c47-930f-5513d1898511	TypeError: allowedOrigins.indexOf is not a function	GET	/	undefined
+20230710	12:11:55	fc40b4ee-d7b9-49c8-b087-a66ce4c4ef7b	TypeError: allowedOrigins.indexOf is not a function	GET	/	undefined
+20230710	12:22:03	69220ad8-6afc-40a0-8fe6-d5a481d490f4	Error: Not allowed by CORS	GET	/	undefined
+20230710	12:22:03	2120475c-4541-4832-9900-f1c441e6aec4	Error: Not allowed by CORS	GET	/	undefined
